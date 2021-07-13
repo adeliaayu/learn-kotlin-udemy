@@ -24,17 +24,20 @@ fun main(){
     var myGlassesBrand: String?
 
     //2
-    var myFavoriteNumber: Int? = 9
-    println("Angka favorite saya dikali 2 = ${myFavoriteNumber!! * 2}" )
+    var myFavoriteNumber: Int? = null
+    //println("Angka favorite saya dikali 2 = ${myFavoriteNumber!! * 2}" )
+    println("Angka favorite saya dikali 2 = ${myFavoriteNumber?.times(2) ?: 0}" )
 
     //3
     var myNickname: String? = "Adel"
     println("Jumlah karakter nama panggilan saya ada ${myNickname?.length}")
 
     //4
-    var myIPK: Double? = 3.9
+    var myIPK: Double? = null
     myIPK?.let {
         println("Nilai IPK anda telah muncul yakni $myIPK")
+    } ?: run {
+        println("Tercetak kalo let tidak jalan")
     }
 
     //5

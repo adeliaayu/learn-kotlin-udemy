@@ -106,6 +106,13 @@ fun main(){
         println("UFO")
     }
 
+    when {
+        wheels == 2 -> println("Sepeda motor")
+        wheels == 4 -> println("Mobil")
+        wheels > 4 -> println("Kendaraan besar")
+        else -> println("UFO")
+    }
+
     var monitor = 2
     if (monitor < 1) {
         println("Orang jaman dulu")

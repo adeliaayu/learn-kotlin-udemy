@@ -11,10 +11,20 @@ package section8.functions
 fun main(){
     //5
     var rerata2Nilai = ::averageNumber
+    var coba = averageNumber(5,4)
+    println(rerata2Nilai(8,4))
+    println(coba)
     var nilaiTerkecil = ::minNumber
     var lolosKKM = ::validasiScore
     var butuhOksigen = ::cekOksidasi
     var tesAntigen = ::cekCovid
+
+    challenge1(::averageNumber,::minNumber, 10, 20)
+}
+
+fun challenge1(rerata2Nilai: (Int, Int) -> Int, nilaiTerkecil: (Int, Int) -> Int, firstNumber: Int, secondNumber: Int){
+    println(rerata2Nilai(firstNumber, secondNumber))
+    println(nilaiTerkecil(firstNumber, secondNumber))
 }
 
 //1
@@ -85,6 +95,7 @@ fun operasiMatematika(firstNumber: Int): Int = firstNumber * firstNumber
 
 //5
 fun averageNumber(firstNumber: Int, secondNumber: Int) = (firstNumber + secondNumber) / 2
+
 fun minNumber(firstNumber: Int, secondNumber: Int) : Int {
     var result: Int
     when {
