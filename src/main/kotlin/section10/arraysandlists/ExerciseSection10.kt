@@ -113,10 +113,10 @@ fun main(){
     println(grade.joinToString())
 
     var age : List<Int>? = mutableListOf(7, 8, 34, 33)
-    println(age!!.joinToString())
+    println(age?.joinToString())
     age = null
     println(age)
-    
+
     var car : List<String?>? = mutableListOf("Agya", "Ignis", "Inova", null)
     println(car?.joinToString())
 }
