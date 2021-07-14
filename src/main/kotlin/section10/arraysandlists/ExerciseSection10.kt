@@ -36,6 +36,12 @@ fun main(){
     var rujak: Array<String> = arrayOf("Apel", "Mangga", "Timun")
     var handphone: Array<String> = arrayOf("Samsung", "iPhone", "Xiaomi")
 
+    if (cars.contains("Toyota")){
+        println("Benar ada")
+    } else {
+        println("Tidak ada")
+    }
+
     //3
     var number1to10 = arrayOf(1,2,3,4,5,6,7,8,9,10).toIntArray()
 
@@ -44,6 +50,7 @@ fun main(){
     var oddDoubleNumber: List<Double> = listOf(5.3, 1.5, 7.9)
     var randomNumbers: List<Double> = listOf(6.4, 8.0, 5.2)
     var emptyDoubleList: List<Double> = listOf()
+    var emptyDoubleList1 = listOf<Double>()
     var number1toRandom = listOf<Double>(1.0, 2.0, 3.0)
 
     //5
@@ -52,6 +59,12 @@ fun main(){
     var floatList: List<Float> = mutableListOf(5.6F, 3.7F, 44.5F)
     var trueAndFalseList: List<Boolean> = mutableListOf(true, false, false)
     var convertedMutableList: List<Int> = listOf(4, 6, 7, 5).toMutableList()
+
+    println(nameList.filterNot {
+        it.uppercase().contains('A')
+   //     it.contains('A') || it.contains('a')
+    })
+
 
     //6
     println(nameList.get(0))
