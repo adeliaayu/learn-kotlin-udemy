@@ -1,7 +1,5 @@
 package section10.arraysandlists
 
-import java.util.*
-
 /*
     1. Create 5 Integer Arrays
     2. Create 5 String Arrays

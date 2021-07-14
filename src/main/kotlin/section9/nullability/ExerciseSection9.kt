@@ -1,7 +1,5 @@
 package section9.nullability
 
-import com.sun.org.apache.xpath.internal.operations.Bool
-
 /*
     1. Create 10 nullable variables
     2. Use not null assertion operator
