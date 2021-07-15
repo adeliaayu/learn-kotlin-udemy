@@ -5,7 +5,7 @@ package section13.classes
     2. Create 5 References to each class
     3. Use the identity operator
     4. Create 3 data classes
-    5. Use DD to extract data
+    5. Use Destructuring Declaration to extract data
  */
 
 fun main(){
@@ -72,6 +72,7 @@ class Phone (var type: String, var brand: String, var idSeries: String)
 
 class Animal (var feet: Int, var habitat: String, var name: String){
 
+    var fur: String = ""
     fun eat(){
         println("Every animals need to eat")
     }
