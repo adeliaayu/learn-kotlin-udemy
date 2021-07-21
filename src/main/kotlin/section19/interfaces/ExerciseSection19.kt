@@ -57,8 +57,11 @@ class Cat(override var name: String,
           override var age: Int,
           override var species: String,
           override var color: String,
-          override var food: String
-) : Animal {
+          override var food: String,
+          override var race: String,
+          override var country: String,
+          override var language: String
+) : Animal, People {
     override fun eat() {
         println("$name makan ikan")
     }
@@ -69,6 +72,10 @@ class Cat(override var name: String,
 
     override fun play() {
        println("$name suka bermain kejar-kejaran")
+    }
+
+    override fun origin() {
+        TODO("Not yet implemented")
     }
 
     override fun move() {

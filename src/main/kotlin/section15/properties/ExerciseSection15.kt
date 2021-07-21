@@ -52,7 +52,9 @@ fun main() {
     println(student1.studentBodyGrade)
     println(student1.isThisStudentGood)
     student1.school = "Harvard University"
-    println(student1.school)
+    if (student1.isSchoolInitialized()){
+        println(student1.school)
+    }
     println(student2.smartpants)
 
 
@@ -193,6 +195,8 @@ class Student(val name: String, val studentID: Int) {
     }
 
     lateinit var school: String
+    // Setiap penggunaan lateinit harus ada pengecekan apakah telah di inisialisasi
+    fun isSchoolInitialized() = ::school.isInitialized
 }
 
 val Student.smartpants: String

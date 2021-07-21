@@ -9,6 +9,11 @@ package section16.methods
     6. Create 5 Companion object extension methods
  */
 
+fun main() {
+    val emptyVariable  = "Apel"
+    println(emptyVariable.default("Adel"))
+}
+
 // 1
 class Animal(val name: String, val feet: Int){
     fun eat(){
@@ -28,6 +33,10 @@ class Animal(val name: String, val feet: Int){
             println("Semua hewan memiliki nama latinnya sendiri")
         }
     }
+}
+
+fun String.default(defaultValue: String) : String {
+    return if (this.isEmpty()) defaultValue else this
 }
 
 fun Animal.isSwimming(able: Boolean){
