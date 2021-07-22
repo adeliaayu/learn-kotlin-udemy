@@ -1,8 +1,6 @@
-import section21.kotlinandjavaoperability.FreeFunctionsKt;
-import section21.kotlinandjavaoperability.Job;
-import section21.kotlinandjavaoperability.PersonExtensions;
+package section21.kotlinandjavaoperability;
 
-public class Person {
+public class Person2 {
 
     private String name = "";
     private String hobbie = "";

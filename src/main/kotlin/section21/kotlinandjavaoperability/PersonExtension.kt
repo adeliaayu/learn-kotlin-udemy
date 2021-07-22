@@ -3,9 +3,9 @@
 package section21.kotlinandjavaoperability
 
 import Person
-val Person.personFullDescription: String
+val Person2.personFullDescription: String
     get() = "$name - $hobbie - ${personJob.name}"
 
-fun Person.returnDepositMoneyOfPerson(money: Int) {
+fun Person2.returnDepositMoneyOfPerson(money: Int) {
     depositMoney = money
 }

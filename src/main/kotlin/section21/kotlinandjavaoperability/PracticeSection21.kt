@@ -14,7 +14,7 @@ fun main(){
 //    println(myPerson)
 
     // Kotlin Class as Java Property
-    val myPerson = Person()
+    val myPerson = Person2()
     myPerson.name = "Joe"
     val programmingJob = Job("iOS Developer", 2000, JobType.Freelance)
     myPerson.personJob = programmingJob
@@ -29,7 +29,7 @@ fun main(){
     println(myPerson)
 
     // Java Nullability
-    val myPerson2 = Person()
+    val myPerson2 = Person2()
     println(myPerson2.hobbie.length)
     myPerson2.hobbie = null
     println(myPerson2.hobbie?.length)
